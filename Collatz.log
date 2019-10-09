@@ -1,3 +1,21 @@
+commit 474997578c0bedc7b10999aa7e1c678511145f82
+Author: Diana De La Torre <didelatorre@utexas.edu>
+Date:   Wed Oct 9 00:09:30 2019 -0500
+
+    added assertions, fixed test cases so they run
+
+commit a7b314be42f151de1546ddb3bed04407b25ba7f7
+Author: Diana De La Torre <didelatorre@utexas.edu>
+Date:   Mon Oct 7 19:32:56 2019 -0500
+
+    Added test cases to functions
+
+commit 0fb8ae5d6812ddc39921d250d9575f254ec8bd90
+Author: Diana De La Torre <didelatorre@utexas.edu>
+Date:   Mon Oct 7 19:24:12 2019 -0500
+
+    added more test cases to each functionOB
+
 commit 8ea5cf44971147ba2f8d018fc1d1c1aa6a20553a
 Author: Fares Fraij <fares@utexas.edu>
 Date:   Sat Aug 24 14:27:56 2019 -0700
