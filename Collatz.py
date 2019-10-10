@@ -33,17 +33,16 @@ def cycle_length (n) :
     assert n > 0
     cycle = 1
     while n > 1 :
-        
         if (n % 2) == 0 :
             n = (n // 2)
             cycle += 1
         else :
-
-            n = n + (n // 2) + 1
+            n = (n + (n // 2) + 1)
             cycle += 2
             
 
     assert cycle > 0
+    assert cycle < 999999
     return cycle
 
 def collatz_eval (i, j) :
@@ -52,7 +51,8 @@ def collatz_eval (i, j) :
         (i,j) = (j,i)
     if ((j // 2) + 1) > i :
         i = (j // 2) + 1
-    
+        
+    assert j > i    
     
     for n in range (i, j + 1):
         if n in cache:
@@ -65,6 +65,7 @@ def collatz_eval (i, j) :
             max_cycle = cycle
 
     assert max_cycle > 0
+    assert max_cycle < 999999
     return max_cycle
 
 
