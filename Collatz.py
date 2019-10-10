@@ -21,37 +21,52 @@ def collatz_read(s):
     return [int(a[0]), int(a[1])]
 
 
-
 # ------------
 # collatz_eval
-# ------------
+# -----------
+cache = {}
 
+def cycle_length (n) :
+    """
+    calculate the number of cycle length for Collatz
+    """
+    assert n > 0
+    cycle = 1
+    while n > 1 :
+        
+        if (n % 2) == 0 :
+            n = (n // 2)
+            cycle += 1
+        else :
 
-def collatz_eval(i, j):
-    """
-    i the beginning of the range, inclusive
-    j the end       of the range, inclusive
-    return the max cycle length of the range [i, j]
-    """
-    assert ((0 < i < 999999) and (0 < j < 999999))
-    count = 1
-    cycle_length = []
-    for num in range(i, (j + 1)):
-        while (num != 1):
-            if num % 2 == 0:
-                num /= 2
-                count += 1
-            else:
-                num = (3 * num) + 1
-                count += 1
-        cycle_length.append(count)
-        count = 1
-    cycle = max(cycle_length)
-    assert cycle > 0 and cycle < 999999
+            n = n + (n // 2) + 1
+            cycle += 2
+            
+
+    assert cycle > 0
     return cycle
 
+def collatz_eval (i, j) :
+    max_cycle = 0
+    if j<i:
+        (i,j) = (j,i)
+    if ((j // 2) + 1) > i :
+        i = (j // 2) + 1
     
     
+    for n in range (i, j + 1):
+        if n in cache:
+            cycle = cache[n]
+        else:
+            cycle = cycle_length (n)
+            cache[n] = cycle
+
+        if (cycle > max_cycle):
+            max_cycle = cycle
+
+    assert max_cycle > 0
+    return max_cycle
+
 
     
 

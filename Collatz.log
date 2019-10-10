@@ -1,3 +1,9 @@
+commit 28e405c00cf7e45b554840a144a3c972fe3f3209
+Author: Diana De La Torre <didelatorre@utexas.edu>
+Date:   Wed Oct 9 00:30:53 2019 -0500
+
+    fixed file outputs with correct values of collatz
+
 commit 474997578c0bedc7b10999aa7e1c678511145f82
 Author: Diana De La Torre <didelatorre@utexas.edu>
 Date:   Wed Oct 9 00:09:30 2019 -0500
