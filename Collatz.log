@@ -1,3 +1,9 @@
+commit b9bd012505df8bd854f0366c0e74b848e6562a96
+Author: Diana De La Torre <didelatorre@utexas.edu>
+Date:   Thu Oct 10 11:31:38 2019 -0500
+
+    added better assertions
+
 commit e818f2eff3beaf3449d67fcbdd14ad6cf872d832
 Author: Diana De La Torre <didelatorre@utexas.edu>
 Date:   Thu Oct 10 00:57:43 2019 -0500

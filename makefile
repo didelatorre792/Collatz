@@ -9,10 +9,10 @@ FILES :=                              \
     RunCollatz.py                     \
     TestCollatz.out                   \
     TestCollatz.py                    \
-    #cs330e-collatz-tests/didelatorre792-RunCollatz.in   \
-    #cs330e-collatz-tests/didelatorre792-RunCollatz.out  \
-    #cs330e-collatz-tests/didelatorre792-TestCollatz.out \
-    #cs330e-collatz-tests/didelatorre792-TestCollatz.py  \
+    cs330e-collatz-tests/didelatorre792-RunCollatz.in   \
+    cs330e-collatz-tests/didelatorre792-RunCollatz.out  \
+    cs330e-collatz-tests/didelatorre792-TestCollatz.out \
+    cs330e-collatz-tests/didelatorre792-TestCollatz.py  \
 
 ifeq ($(shell uname), Darwin)          # Apple
     PYTHON   := python3
