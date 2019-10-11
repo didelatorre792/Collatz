@@ -24,52 +24,64 @@ def collatz_read(s):
 # ------------
 # collatz_eval
 # -----------
+
+# creating cache
 cache = {}
 
-def cycle_length (n) :
+
+def cycle_length(n):
     """
     calculate the number of cycle length for Collatz
     """
+    # making sure collatz input is non-negative
     assert n > 0
+
     cycle = 1
-    while n > 1 :
-        if (n % 2) == 0 :
+    # while loop keeps cycling until number equals desired 1
+    while n > 1:
+        # if n is even
+        if (n % 2) == 0:
             n = (n // 2)
             cycle += 1
-        else :
+        else:
+            # if n is odd
             n = (n + (n // 2) + 1)
             cycle += 2
-            
 
+    # cycle will never be under 0 or above 999999
     assert cycle > 0
     assert cycle < 999999
     return cycle
 
-def collatz_eval (i, j) :
+
+def collatz_eval(i, j):
+
     max_cycle = 0
-    if j<i:
-        (i,j) = (j,i)
-    if ((j // 2) + 1) > i :
+    #making sure that the left integer in range is always the smallest
+    if j < i:
+        (i, j) = (j, i)
+    if ((j // 2) + 1) > i:
         i = (j // 2) + 1
-        
-    assert j > i    
-    
-    for n in range (i, j + 1):
+
+    assert j > i
+    # creating cache values
+    for n in range(i, j + 1):
+        #getting cache value with index if already in cache
         if n in cache:
             cycle = cache[n]
+        #otherwise, store value
         else:
-            cycle = cycle_length (n)
+            cycle = cycle_length(n)
             cache[n] = cycle
 
         if (cycle > max_cycle):
             max_cycle = cycle
 
+    # max_cycle will never be under 0 or above 999999
     assert max_cycle > 0
     assert max_cycle < 999999
     return max_cycle
 
-
-    
 
 # -------------
 # collatz_print
