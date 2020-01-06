@@ -8,13 +8,11 @@ FILES :=                              \
     RunCollatz.out                    \
     RunCollatz.py                     \
     TestCollatz.out                   \
-    TestCollatz.py
-
-#    cs330e-collatz-tests/YourGitLabID-RunCollatz.in   \
-#    cs330e-collatz-tests/YourGitLabID-RunCollatz.out  \
-#    cs330e-collatz-tests/YourGitLabID-TestCollatz.out \
-#    cs330e-collatz-tests/YourGitLabID-TestCollatz.py  \
-#
+    TestCollatz.py                    \
+    cs330e-collatz-tests/didelatorre792-RunCollatz.in   \
+    cs330e-collatz-tests/didelatorre792-RunCollatz.out  \
+    cs330e-collatz-tests/didelatorre792-TestCollatz.out \
+    cs330e-collatz-tests/didelatorre792-TestCollatz.py  \
 
 ifeq ($(shell uname), Darwin)          # Apple
     PYTHON   := python3

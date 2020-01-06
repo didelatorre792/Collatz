@@ -1,0 +1,71 @@
+commit 5b733e472210e2f4d18a7bb54708dc11d188e6d4
+Author: Diana De La Torre <didelatorre@utexas.edu>
+Date:   Thu Oct 10 20:33:18 2019 -0500
+
+    final comments
+
+commit ca32c791c59a05aad053d15207f9d139e24f1423
+Author: Diana De La Torre <didelatorre@utexas.edu>
+Date:   Thu Oct 10 13:31:44 2019 -0500
+
+    pushing final makefile and log
+
+commit b9bd012505df8bd854f0366c0e74b848e6562a96
+Author: Diana De La Torre <didelatorre@utexas.edu>
+Date:   Thu Oct 10 11:31:38 2019 -0500
+
+    added better assertions
+
+commit e818f2eff3beaf3449d67fcbdd14ad6cf872d832
+Author: Diana De La Torre <didelatorre@utexas.edu>
+Date:   Thu Oct 10 00:57:43 2019 -0500
+
+    Added better test cases.
+
+commit 43cb6599a9e3e08b267f17eb2f7e8f80772d68ee
+Author: Diana De La Torre <didelatorre@utexas.edu>
+Date:   Thu Oct 10 00:44:08 2019 -0500
+
+    Added better test cases.
+
+commit d0b8691df930ea0a740b9c372bfce5ac18dca019
+Author: Diana De La Torre <didelatorre@utexas.edu>
+Date:   Thu Oct 10 00:23:26 2019 -0500
+
+    Added better test cases, double checked collatz values, and created lazy cache.
+
+commit 28e405c00cf7e45b554840a144a3c972fe3f3209
+Author: Diana De La Torre <didelatorre@utexas.edu>
+Date:   Wed Oct 9 00:30:53 2019 -0500
+
+    fixed file outputs with correct values of collatz
+
+commit 474997578c0bedc7b10999aa7e1c678511145f82
+Author: Diana De La Torre <didelatorre@utexas.edu>
+Date:   Wed Oct 9 00:09:30 2019 -0500
+
+    added assertions, fixed test cases so they run
+
+commit a7b314be42f151de1546ddb3bed04407b25ba7f7
+Author: Diana De La Torre <didelatorre@utexas.edu>
+Date:   Mon Oct 7 19:32:56 2019 -0500
+
+    Added test cases to functions
+
+commit 0fb8ae5d6812ddc39921d250d9575f254ec8bd90
+Author: Diana De La Torre <didelatorre@utexas.edu>
+Date:   Mon Oct 7 19:24:12 2019 -0500
+
+    added more test cases to each functionOB
+
+commit 8ea5cf44971147ba2f8d018fc1d1c1aa6a20553a
+Author: Fares Fraij <fares@utexas.edu>
+Date:   Sat Aug 24 14:27:56 2019 -0700
+
+    first commit
+
+commit a22a10e96b3338d4f58a227b34de8df530861827
+Author: Fares Fraij <fares@utexas.edu>
+Date:   Sat Aug 24 21:23:21 2019 +0000
+
+    Initial commit
